@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Unitime Project</title>
+    <meta content name="description">
+    <meta content name="keywords">
+
+    <link rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div
+        class="container-fluid d-flex align-items-center justify-content-between">
+
+        <a href="index.html"
+          class="logo d-flex align-items-center  me-auto me-lg-0">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <i class="bi bi-house"></i>
+          <h1>Golden mega Appartement</h1>
+        </a>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a href="index.html">ACCEUIL</a></li>
+            <li><a href="services.html" class="active">SERVICE</a></li>
+            <li><a href="contact.html">CONTACTEZ NOUS</a></li>
+          </ul>
+        </nav><!-- .navbar -->
+
+        <style>
+          #icon_f{
+            font-size: 30px;
+            color: aliceblue;
+          }
+          #icon_f:hover{
+            transform: scale(1.1);
+
+          }
+        </style>
+        <div class="header-social-links">
+          <a id="icon_f"
+            href="https://web.facebook.com/mohamed.adardour.16?mibextid=ZbWKwL&_rdc=1&_rdr"
+            target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+      </div>
+    </header><!-- End Header -->
+
+    <main id="main" data-aos="fade" data-aos-delay="1500">
+
+      <!-- ======= End Page Header ======= -->
+      <div class="page-header d-flex align-items-center">
+        <div class="container position-relative">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h2>Services</h2>
+              <p>Profitez de l'intimité et des commodités d'un appartement à
+                Agadir, avec la liberté de choisir votre
+                emplacement et de bénéficier d'une assistance locale pour une
+                expérience authentique. <br>
+                Nous disposons de deux appartements hautement sophistiqués
+                situés à Hay Salam à Agadir. Pour plus d'informations, veuillez
+                cliquer sur les images ci-dessous.</p>
+
+              <a class="cta-btn" href="contact.html">CONTACTEZ NOUS</a>
+
+            </div>
+          </div>
+        </div>
+      </div><!-- End Page Header -->
+      <!-- ======= Gallery Section ======= -->
+      <section id="gallery" class="gallery">
+        <div class="container-fluid">
+
+          <div class="row gy-4 justify-content-center">
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="gallery-item h-100">
+                <img src="assets/img/apt-1/1.jpg" class="img-fluid" alt>
+                <div
+                  class="gallery-links d-flex align-items-center justify-content-center">
+                  <a href="apt-1.html" class="details-link">Voir plus</a>
+                </div>
+              </div>
+            </div><!-- End Gallery Item -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="gallery-item h-100">
+                <img src="assets/img/apt-2/1.jpg" class="img-fluid" alt>
+                <div
+                  class="gallery-links d-flex align-items-center justify-content-center">
+                  <a href="apt-2.html" class="details-link">Voir plus</a>
+                </div>
+              </div>
+            </div><!-- End Gallery Item -->
+
+          </div>
+
+        </div>
+      </section><!-- End Gallery Section -->
+
+      <div style="height: 50px;"></div>
+
+      <!-- ======= Services Section ======= -->
+      <section id="services" class="services">
+        <div class="container">
+
+          <div class="row gy-4">
+
+            <div class="col-xl-3 col-md-6 d-flex">
+              <div class="service-item position-relative">
+                <i class="bi bi-diagram-2-fill"></i>
+                <h4><a class="stretched-link">Flexibilité</a></h4>
+                <p>La location d'appartements à Agadir offre une grande
+                  flexibilité en termes de durée de séjour.</p>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-xl-3 col-md-6 d-flex">
+              <div class="service-item position-relative">
+                <i class="bi bi-door-closed"></i>
+                <h4><a class="stretched-link">Intimité</a></h4>
+                <p>En louant un appartement, vous bénéficiez d'un espace privé
+                  rien qu'à vous.</p>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-xl-3 col-md-6 d-flex">
+              <div class="service-item position-relative">
+                <i class="bi bi-lightbulb"></i>
+                <h4><a class="stretched-link">Commodités</a></h4>
+                <p>Les appartements de location à Agadir sont souvent équipés de
+                  toutes les commodités dont vous avez
+                  besoin pour un séjour confortable.</p>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-xl-3 col-md-6 d-flex">
+              <div class="service-item position-relative">
+                <i class="bi bi-people"></i>
+                <h4><a class="stretched-link">Immersion culturelle</a></h4>
+                <p>En louant un appartement à Agadir, vous avez l'opportunité de
+                  vivre parmi les habitants locaux et
+                  d'expérimenter la culture et le mode de vie authentiques de la
+                  région.</p>
+              </div>
+            </div><!-- End Service Item -->
+
+          </div>
+
+        </div>
+      </section><!-- End Services Section -->
+
+      <!-- ======= Testimonials Section ======= -->
+      <section id="testimonials" class="testimonials">
+        <div class="container">
+
+          <div class="section-header">
+            <h2>Avis</h2>
+            <p>Ce qu'ils disent</p>
+          </div>
+
+          <div class="slides-3 swiper">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-starF-fill"></i><i
+                      class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    Nous avons passé un séjour incroyable dans l'appartement que
+                    nous avons loué avec cette agence. L'endroit était
+                    impeccable, bien équipé et parfaitement situé. Le personnel
+                    était également très professionnel et attentionné. Leur
+                    service client était exceptionnel, répondant à tous nos
+                    besoins et faisant en sorte que notre séjour soit des plus
+                    agréables. Nous avons été vraiment satisfaits de notre
+                    expérience et nous recommandons vivement cette agence de
+                    location !</p>
+                  <div class="profile mt-auto">
+                    <img src="assets/img/testimonials/AL.jpg"
+                      class="testimonial-img" alt>
+                    <h3>Alex</h3>
+                  </div>
+                </div>
+              </div><!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    Nous avons été très satisfaits de notre expérience de
+                    location avec cette agence. L'appartement était
+                    spacieux, confortable et offrait une vue magnifique sur la
+                    mer. De plus, le processus de réservation a
+                    été facile et l'équipe a été très réactive à toutes nos
+                    demandes. Nous reviendrons certainement ici
+                    lors de notre prochain séjour à Agadir !
+                  </p>
+                  <div class="profile mt-auto">
+                    <img src="assets/img/testimonials/A.png"
+                      class="testimonial-img" alt>
+                    <h3>Aisha</h3>
+                  </div>
+                </div>
+              </div><!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    Je recommande vivement cette agence de location d'appartements.
+                    L'appartement que nous avons loué
+                    était propre, moderne et bien meublé. L'emplacement était
+                    également idéal, à proximité des plages et
+                    des attractions principales. L'équipe de l'agence était
+                    sympathique, professionnelle et toujours prête
+                    à nous aider. Ce fut une expérience vraiment agréable !
+                  </p>
+                  <div class="profile mt-auto">
+                    <img src="assets/img/testimonials/F.png"
+                      class="testimonial-img" alt>
+                    <h3>Fatima</h3>
+                  </div>
+                </div>
+              </div><!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    L'appartement était exactement comme décrit, avec toutes les
+                    commodités dont nous avions besoin. Le processus de check-in
+                    et check-out était fluide, et le personnel nous a accueillis
+                    chaleureusement. De plus, le service de location de voiture
+                    était également excellent. Nous avons pu louer une voiture
+                    facilement et elle était en parfait état, ce qui nous a
+                    permis de découvrir Agadir et ses environs en toute liberté.
+                    Nous avons vraiment apprécié notre séjour et nous n'hésiterons
+                    pas à revenir ici lors de notre prochain voyage à Agadir. C'était
+                    vraiment beau!
+                  </p>
+                  <div class="profile mt-auto">
+                    <img src="assets/img/testimonials/MM.jpg"
+                      class="testimonial-img" alt>
+                    <h3>Mohammed</h3>
+                  </div>
+                </div>
+              </div><!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    Notre séjour dans l'appartement loué par cette agence a été
+                    tout simplement parfait. L'appartement était élégant, propre
+                    et bien équipé. De plus, l'emplacement était central, ce qui
+                    nous a permis d'explorer facilement la ville. Le service
+                    client était exceptionnel, avec une communication claire et
+                    des réponses rapides à nos questions. Nous avons également
+                    bénéficié d'un service de location de voiture de qualité, ce
+                    qui a rendu notre séjour encore plus agréable. Nous
+                    recommandons vivement cette agence à tous ceux qui
+                    recherchent un logement de qualité à Agadir. C'était
+                    vraiment beau!
+                  </p>
+                  <div class="profile mt-auto">
+                    <img src="assets/img/testimonials/M.png"
+                      class="testimonial-img" alt>
+                    <h3>Ahmed</h3>
+                  </div>
+                </div>
+              </div><!-- End testimonial item -->
+
+            </div>            
+            <div style="color: aliceblue;" class="swiper-button-prev"></div>
+            <div style="color: aliceblue;" class="swiper-button-next"></div>
+            <div  class="swiper-pagination"></div>
+
+          </div>
+
+        </div>
+      </section><!-- End Testimonials Section -->
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Unitime</span></strong>. All Rights
+          Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/ -->
+          Designed by <a href="https://unitime-agency.com/">Unitime</a>
+        </div>
+      </div>
+    </footer><!-- End Footer -->
+
+    <a href="#"
+      class="scroll-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+    <div id="preloader">
+      <div class="line"></div>
+    </div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+  </body>
+
+</html>

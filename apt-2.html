@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Unitime Project</title>
+    <meta content name="description">
+    <meta content name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div
+        class="container-fluid d-flex align-items-center justify-content-between">
+
+        <a href="index.html"
+          class="logo d-flex align-items-center  me-auto me-lg-0">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <i class="bi bi-house"></i>
+          <h1>Golden mega Appartement</h1>
+        </a>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a href="index.html">ACCEUIL</a></li>
+            <li><a href="services.html">SERVICE</a></li>
+            <li><a href="contact.html">CONTACTEZ NOUS</a></li>
+          </ul>
+        </nav><!-- .navbar -->
+
+        <style>
+          #icon_f{
+            font-size: 30px;
+            color: aliceblue;
+          }
+          #icon_f:hover{
+            transform: scale(1.1);
+
+          }
+        </style>
+        <div class="header-social-links">
+          <a id="icon_f"
+            href="https://web.facebook.com/mohamed.adardour.16?mibextid=ZbWKwL&_rdc=1&_rdr"
+            target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+      </div>
+    </header><!-- End Header -->
+
+    <main id="main" data-aos="fade" data-aos-delay="1500">
+      <div style="height: 60px;"></div>
+      <!-- ======= End Page Header ======= -->
+      <div class="page-header d-flex align-items-center">
+        <div class="container position-relative">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h2>Deuxième appartement</h2>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Page Header -->
+      <style>
+  .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+  overflow: auto; /* Allow scrolling if necessary */
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+  height: 400px;
+  width: 400px;
+}
+
+
+.show-more-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #2cbc85;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.show-more-button:hover {
+  background-color: #02a767;
+}
+
+.show-vid-button{
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #f4fffb;
+  color: rgb(74, 74, 74);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.show-vid-button:hover {
+  background-color: #d5d5d5;
+}
+
+.popup-container {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: auto;
+}
+
+.popup-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: #bbb;
+}
+
+#videoPlayer {
+  max-width: 95%;
+  max-height: 95%;
+}
+
+
+</style>
+
+      <!-- ======= Gallery Single Section ======= -->
+      <section id="gallery-single" class="gallery-single">
+        <div class="container">
+          <div class="position-relative h-100">
+            <div class="grid-container" id="gridContainer">
+              <div class="grid-item">
+                <img
+                  style="border-top-left-radius: 10px;border-bottom-left-radius: 10px;"
+                  src="assets/img/apt-2/1.jpg" alt>
+              </div>
+              <div class="grid-item">
+                <img src="assets/img/apt-2/2.jpg" alt>
+              </div>
+              <div class="grid-item">
+                <img src="assets/img/apt-2/3.jpg" alt>
+              </div>
+              <div class="grid-item">
+                <img
+                  style="border-top-right-radius: 10px;border-bottom-right-radius: 10px;"
+                  src="assets/img/apt-2/4.jpg" alt>
+              </div>
+            </div>
+            <button class="show-more-button" id="showMoreButton">Voir plus</button>&nbsp;&nbsp;&nbsp;<button
+              class="show-vid-button" id="showVidButton">Voir vidéo <i
+                class="fa-solid fa-video"></i></button>
+
+            <div id="videoPopup" class="popup-container">
+              <div class="popup-content">
+                <span class="close-button">&times;</span>
+                <video id="videoPlayer" controls>
+                  <source src="assets/img/Appartement-Jitsakan-2.mp4"
+                    type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+
+            <script>
+            document.getElementById('showMoreButton').addEventListener('click', function() {
+  window.location.href = 'apt-2-slide.html'; // Replace 'your-page-url' with the actual URL of the page you want to redirect to
+});
+document.getElementById('showVidButton').addEventListener('click', function() {
+  document.getElementById('videoPopup').style.display = 'block';
+  playVideo();
+});
+
+document.querySelector('.close-button').addEventListener('click', function() {
+  document.getElementById('videoPopup').style.display = 'none';
+  pauseVideo();
+});
+
+function playVideo() {
+  var videoPlayer = document.getElementById('videoPlayer');
+  videoPlayer.play();
+}
+
+function pauseVideo() {
+  var videoPlayer = document.getElementById('videoPlayer');
+  videoPlayer.pause();
+  videoPlayer.currentTime = 0;
+}
+
+document.getElementById('videoPlayer').addEventListener('ended', function() {
+  pauseVideo();
+});
+
+          </script>
+          </div>
+
+          <div style="height: 50px;"></div>
+          <div class="row justify-content-between gy-4 mt-4">
+
+            <div class="col-lg-8">
+              <div class="portfolio-description">
+                <h2 style="font-size: 30px;">Logement entier: appartement - Chez
+                  Mohamed.</h2>
+                <p></p>
+                <h2>Description</h2>
+                <p>
+                  Appartement à louer avec toilette, salon marocain, cuisine,
+                  salle à manger et deux chambres. Intérieur spacieux et bien
+                  aménagé, offrant un cadre confortable pour la vie quotidienne.
+                  Situé dans un quartier calme et accessible, idéal pour une
+                  famille ou des colocataires. Ne manquez pas cette opportunité
+                  !
+                </p>
+                <h2>Equipements</h2>
+                <p style="font-size: 18px;">Ce logement propose:</b></p>
+              <div style="overflow-x: auto;">
+                <table style="width: 100%; font-size: 17px;height: 200px;">
+                  <tr>
+                    <td><i class="fa-solid fa-tv"></i> Télévision</td>
+                    <td><i class="fa-solid fa-utensils"></i> Micro-ondes</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa-solid fa-fan"></i> Climatiseur</td>
+                    <td><i class="fa-solid fa-burn"></i> Chauffe-eau électrique</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa-solid fa-tshirt"></i> Machine à laver</td>
+                    <td><i class="fa-solid fa-snowflake"></i> Réfrigérateur</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa-solid fa-fire"></i> Fourneau électrique</td>
+                  </table>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="portfolio-info">
+                <h3>Informations</h3>
+                <ul>
+                  <li><strong>Category</strong> <span>Appartement</span></li>
+                  <li><strong><i class="fa-solid fa-location-dot"></i>
+                      Localisation</strong> <span>Rue Enarjis, Jet Sakane, Itri,
+                      Cité Salam, AGADIR</span></li>
+                  <li><a href="contact.html" class="btn-visit align-self-start">CONTACTEZ
+                      NOUS</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section><!-- End Gallery Single Section -->
+      <div style="height: 60px;"></div>
+      <section id="services" class="services">
+        <div class="container">
+
+          <div class="row gy-4">
+
+            <div style="width: 100%; height: 400px;">
+              <iframe
+                src="https://www.google.com/maps?q=30.3922424316406,-9.54897308349609&output=embed"
+                style="border: 0; width: 100%; height: 100%;"
+                allowfullscreen loading="lazy"></iframe>
+            </div>
+
+          </div>
+
+        </div>
+      </section><!-- End Services Section -->
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Unitime</span></strong>. All Rights
+          Reserved
+        </div>
+        <div class="credits">
+          Designed by <a href="https://unitime-agency.com/">Unitime</a>
+        </div>
+      </div>
+    </footer><!-- End Footer -->
+
+    <a href="#"
+      class="scroll-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+    <div id="preloader">
+      <div class="line"></div>
+    </div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+  </body>
+
+</html>
